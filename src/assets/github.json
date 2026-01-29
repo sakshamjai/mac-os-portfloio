@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    "title": "Personal Portfolio Website",
+    "description": "A modern and responsive personal portfolio website showcasing projects, skills, and contact information.",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive"],
+    "github": "https://github.com/username/portfolio-website",
+    "demo": "https://username.github.io/portfolio-website"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1557821552-17105176677c",
+    "title": "E-commerce Web App",
+    "description": "A full-stack e-commerce application with product listings, cart functionality, and user authentication.",
+    "tags": ["React", "Node.js", "MongoDB", "Express"],
+    "github": "https://github.com/username/ecommerce-app",
+    "demo": "https://ecommerce-demo.vercel.app"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980",
+    "title": "Real-Time Chat Application",
+    "description": "A real-time chat application supporting private rooms and live messaging using WebSockets.",
+    "tags": ["Socket.io", "Node.js", "Express", "Real-Time"],
+    "github": "https://github.com/username/chat-application",
+    "demo": "https://chat-app-demo.netlify.app"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1508780709619-79562169bc64",
+    "title": "Task Management Dashboard",
+    "description": "A task management dashboard to create, update, and track daily tasks with a clean UI.",
+    "tags": ["React", "Tailwind CSS", "Productivity"],
+    "github": "https://github.com/username/task-manager",
+    "demo": "https://task-manager-demo.vercel.app"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "title": "Weather Forecast App",
+    "description": "A weather forecasting app that shows real-time weather data using a public API.",
+    "tags": ["JavaScript", "API", "Weather", "Frontend"],
+    "github": "https://github.com/username/weather-app",
+    "demo": null
+  }
+]
