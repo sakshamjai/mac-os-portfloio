@@ -1,0 +1,32 @@
+nav{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding-inline: 0.75rem;
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+    width: 99%;
+    height: 5%;
+    margin: 0.5%;
+    .left{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        height: 100%;
+    }
+    .right{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        height: 100%;
+    }
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+}
