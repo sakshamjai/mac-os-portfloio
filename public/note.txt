@@ -1,105 +1,108 @@
-/**
- * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
- */
+import { ResumeData } from "./types";
 
-// --------------------------------------------------
-// 1. CORE DEPENDENCIES & SKILLS
-// --------------------------------------------------
+const resumeData: ResumeData = {
+  name: "Saksham Jain",
+  summary:
+    "Motivated BTech student with problem-solving skills and hands-on exposure to data structures, algorithms, and real-world applications.",
 
-const TECH_STACK = {
-  frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
+  skills: {
+    frontend: ["HTML5", "SCSS", "JavaScript"],
+    backend: ["Node.js", "Express", "MongoDB", "MySQL"],
+    languages: ["JavaScript", "C++"],
+    tools: ["Git", "GitHub"],
+    others: ["OOPS", "Problem Solving"],
+    softSkills: ["Time Management", "Adaptable"],
+  },
+
+  projects: [
+    {
+      name: "Precripto – Healthcare Appointment Booking System",
+      duration: "Aug 2025 – Present",
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "bcrypt",
+      ],
+      points: [
+        "Developed a full-stack healthcare appointment booking application to streamline patient–doctor scheduling workflows.",
+        "Implemented secure user authentication and authorization using JWT and bcrypt for password hashing and session security.",
+        "Designed and integrated MongoDB-based data storage to manage user information and appointment records efficiently.",
+        "Built RESTful APIs to handle appointment booking, slot management, and user-related operations.",
+        "Created a responsive and user-friendly interface enabling patients to view doctors, select available slots, and book appointments seamlessly.",
+        "Applied modular backend architecture and clean coding practices to improve scalability, maintainability, and security.",
+        "Focused on data validation, error handling, and secure access control to ensure reliability and system integrity.",
+      ],
+      liveLink: "https://prescripto.vercel.app/",
+    },
+    {
+      name: "StrategiXchess – Real Time Multiplayer Chess Application",
+      duration: "Feb 2025 – June 2025",
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "Socket.IO",
+        "Docker",
+      ],
+      points: [
+        "Architected full-stack multiplayer chess application with React 18 frontend and Node.js and Socket.IO backend.",
+        "Implemented real-time game synchronization using WebSocket communication with <50ms latency.",
+        "Engineered chess rule enforcement engine using chess.js library, supporting all standard moves.",
+        "Designed responsive UI optimized for desktop, tablet, and mobile.",
+        "Built game room management system with unique ID generation, player authentication, and automatic cleanup on disconnection.",
+        "Integrated real-time chat functionality with message persistence and timestamps.",
+        "Deployed containerized application on Render with CORS security configuration.",
+        "Optimized Socket.IO event handling and game state management for minimal network overhead.",
+        "Implemented comprehensive error handling, move validation, and edge case management (stalemate, checkmate, draw).",
+      ],
+      liveLink: "https://strategixchess.onrender.com/",
+    },
+    {
+      name: "Empower – Employee Task Management Tool",
+      duration: "July 2024 – Aug 2024",
+      techStack: ["HTML", "CSS", "JavaScript", "React"],
+      points: [
+        "Enabled admins to assign tasks to employees with detailed data and deadlines.",
+        "Allowed employees to view, negotiate, and accept or decline assigned tasks.",
+        "Facilitated task completion tracking, enabling employees to mark tasks as done.",
+      ],
+    },
   ],
-  backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+
+  education: [
+    {
+      institute: "SRM University, Delhi-NCR, Sonepat, Haryana",
+      degree: "Bachelor of Technology in Computer Science Engineering",
+      year: "2026",
+      cgpa: "7.55",
+    },
+    {
+      institute: "CBSE",
+      degree: "Higher Secondary Education (Math Science)",
+      year: "2020",
+      marks: "94.2%",
+    },
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+
+  achievements: [
+    "Completed Walmart Global Tech Job Simulation demonstrating applied problem-solving skills (2025).",
+    "Led a 3-member college project team, managing tasks and collaboration (2025).",
+  ],
+
+  contact: {
+    email: "sakshamjain3493@gmail.com",
+    linkedin: "https://www.linkedin.com/in/saksham-jain-532587272",
+    github: "https://github.com/sakshamjai",
+  },
 };
 
-// --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
-// --------------------------------------------------
-
-class ProfessionalHistory {
-  
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
-   */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
-  }
-
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
-   */
-  public PixelPerfect_Studios(): void {
-    this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
-    
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
-  }
-}
-
-// --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
-// --------------------------------------------------
-
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
-}
-
-const trophyCabinet: HackathonWin[] = [
-  {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
-  },
-  {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
-  }
-];
-
-// --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
-// --------------------------------------------------
-
-const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
-]);
-
-export default new ProfessionalHistory();
-
-
-```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
-> Ready.
-```
+export default resumeData;

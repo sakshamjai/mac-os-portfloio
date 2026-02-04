@@ -2,48 +2,58 @@ import React from 'react'
 import Terminal from 'react-console-emulator'
 import MacWindow from './MacWindow'
 import './cli.scss'
-const Cli = () => {
+const Cli = ({windowName, setWindowsState}) => {
     const commands = {
-        about: {
-            description: 'About me',
-            usage: 'about',
-            fn: () => 'I am a full-stack web developer passionate about building modern web applications with React, Node.js, and cloud technologies.'
-        },
-        skills: {
-            description: 'List technical skills',
-            usage: 'skills',
-            fn: () => `Frontend: React, Vue.js, Vanilla JS, Sass, HTML/CSS
-Backend: Node.js, Express, Python, Django
-Databases: MongoDB, PostgreSQL, MySQL
-Tools: Git, Docker, Webpack, Vite
-Cloud: AWS, Azure, Heroku`
-        },
-        projects: {
-            description: 'View my projects',
-            usage: 'projects',
-            fn: () => `1. Portfolio Website - React + Vite
-2. E-commerce Platform - MERN Stack
-3. Task Management App - Next.js
-4. Real-time Chat App - Socket.io
-5. Data Dashboard - React + Chart.js`
-        },
-        experience: {
-            description: 'Display work experience',
-            usage: 'experience',
-            fn: () => `Senior Developer @ Tech Corp (2022 - Present)
-  - Led development of 5+ React applications
-  - Mentored junior developers
+about: {
+  description: 'About me',
+  usage: 'about',
+  fn: () =>
+    'I am a full-stack web developer and BTech CSE student who enjoys building real-world web apps using React, Node.js, and MongoDB. I focus on writing clean code, understanding how systems work end-to-end, and improving through hands-on projects.'
+},
 
-Full Stack Developer @ Web Solutions (2020 - 2022)
-  - Built scalable APIs with Node.js
-  - Designed responsive UIs with React`
-        },
+skills: {
+  description: 'List technical skills',
+  usage: 'skills',
+  fn: () => `Frontend: React, JavaScript, HTML5, CSS/SCSS
+            Backend: Node.js, Express.js
+            Databases: MongoDB, MySQL
+            Languages: JavaScript, C++
+            Tools: Git, GitHub
+            Core CS: OOPS, Problem Solving`
+},
+
+projects: {
+  description: 'View my projects',
+  usage: 'projects',
+  fn: () => `1. Precripto – Healthcare Appointment Booking System
+   - MERN stack app with JWT authentication, booking system & slot management
+   - Live: https://prescripto.vercel.app/
+
+            2. StrategiXchess – Real-Time Multiplayer Chess App
+   - Real-time multiplayer chess using React, Node.js & Socket.IO
+   - Live: https://strategixchess.onrender.com/
+
+            3. Empower – Employee Task Management Tool
+   - Task assignment & tracking system built with React`
+},
+
+experience: {
+  description: 'Display experience',
+  usage: 'experience',
+  fn: () => `Full-Stack Developer (Projects & Practice)
+  - Built multiple MERN stack projects with authentication, REST APIs, and real-time features
+  - Implemented CRUD operations, protected routes, and database schemas
+  - Experience with debugging, API integration, and frontend-backend coordination
+
+  Open to internships and entry-level full-stack roles.`
+},
+
         contact: {
             description: 'Get contact information',
             usage: 'contact',
-            fn: () => `Email: ankur@example.com
-Phone: +1 (555) 123-4567
-Location: San Francisco, CA`
+            fn: () => `Email: sakshamjain3493@gmail.com
+            Phone: +91 8930531261
+            Location: Panipat, Haryana`
         },
         github: {
             description: 'Open GitHub profile',
@@ -61,9 +71,8 @@ Location: San Francisco, CA`
         social: {
             description: 'View social media links',
             usage: 'social',
-            fn: () => `Twitter: @ankurdev
-LinkedIn: /in/ankurprajapati
-Portfolio: ankurprajapati.dev`
+            fn: () => `Instagram: @5ak5ham.ja1n
+            LinkedIn: /in/saksham-jain-532587272`
         },
         echo: {
             description: 'Echo a passed string',
@@ -84,7 +93,7 @@ Type 'help' to see all available commands, or try:
 
 Happy exploring!`
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} setWindowsState={setWindowsState}>
         <div className="cli-window">
             <Terminal
                 commands={commands}

@@ -1,47 +1,29 @@
 [
   {
     "id": 1,
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
-    "title": "Personal Portfolio Website",
-    "description": "A modern and responsive personal portfolio website showcasing projects, skills, and contact information.",
-    "tags": ["HTML", "CSS", "JavaScript", "Responsive"],
-    "github": "https://github.com/username/portfolio-website",
-    "demo": "https://username.github.io/portfolio-website"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlfPyhwt5wdLxN8wfqkRkgv6HioHeLl3HHA&s",
+    "title": "Heathcare Appointment Booking System",
+    "description": "Built a full-stack web app that lets patients book doctor appointments with secure authentication and real-time slot management.",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "razorpay"],
+    "github": "https://github.com/sakshamjai/prescripto.healthcare.git",
+    "demo": "prescripto.vercel.app"
   },
   {
     "id": 2,
-    "image": "https://images.unsplash.com/photo-1557821552-17105176677c",
-    "title": "E-commerce Web App",
-    "description": "A full-stack e-commerce application with product listings, cart functionality, and user authentication.",
-    "tags": ["React", "Node.js", "MongoDB", "Express"],
-    "github": "https://github.com/username/ecommerce-app",
-    "demo": "https://ecommerce-demo.vercel.app"
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+    "title": "StrategiXchess (Real-Time Multiplayer Chess App)",
+    "description": "Developed a real-time multiplayer chess platform with live gameplay, chat, and rule enforcement using WebSockets.",
+    "tags": ["React", "Node.js", "MongoDB", "Express.js", "Socket.io"],
+    "github": "https://github.com/riteish214/StrategiXChess",
+    "demo": "strategixchess.onrender.com/"
   },
   {
     "id": 3,
-    "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980",
-    "title": "Real-Time Chat Application",
-    "description": "A real-time chat application supporting private rooms and live messaging using WebSockets.",
-    "tags": ["Socket.io", "Node.js", "Express", "Real-Time"],
-    "github": "https://github.com/username/chat-application",
-    "demo": "https://chat-app-demo.netlify.app"
-  },
-  {
-    "id": 4,
-    "image": "https://images.unsplash.com/photo-1508780709619-79562169bc64",
-    "title": "Task Management Dashboard",
-    "description": "A task management dashboard to create, update, and track daily tasks with a clean UI.",
-    "tags": ["React", "Tailwind CSS", "Productivity"],
-    "github": "https://github.com/username/task-manager",
-    "demo": "https://task-manager-demo.vercel.app"
-  },
-  {
-    "id": 5,
-    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
-    "title": "Weather Forecast App",
-    "description": "A weather forecasting app that shows real-time weather data using a public API.",
-    "tags": ["JavaScript", "API", "Weather", "Frontend"],
-    "github": "https://github.com/username/weather-app",
+    "image": "https://png.pngtree.com/png-clipart/20250117/original/pngtree-clipboard-with-checklist-3d-icon-isolated-on-white-background-for-task-png-image_20271861.png",
+    "title": "EmPower: Employee Management System",
+    "description": "Created a task management system where admins assign tasks and employees track and update task progress.",
+    "tags": ["React.js", "HTML5", "TailwindCSS"],
+    "github": "https://github.com/sakshamjai/EMS.git",
     "demo": null
   }
 ]

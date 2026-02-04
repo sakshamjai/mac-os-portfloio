@@ -8,8 +8,8 @@ const GitCard = ({data = {id: 1, image: "", title: "", description: "", tags: []
         <h2>{data.title}</h2>
         <p>{data.description}</p>
         <div className="tags">
-            {data.tags.map(tag => {
-                return <div className="tag">{tag}</div>
+            {data.tags.map((tag,index) => {
+                return <div className="tag" key={index}>{tag}</div>
             })}
         </div>
         <div className="urls">
@@ -19,13 +19,13 @@ const GitCard = ({data = {id: 1, image: "", title: "", description: "", tags: []
     </div>
 }
 
-const Github = () => {
+const Github = ({windowName, setWindowsState}) => {
   return (
     <div>
-      <MacWindow>
+      <MacWindow windowName = {windowName} setWindowsState = {setWindowsState}>
         <div className="cards">
             {githubData.map((project) => {
-                return <GitCard data = {project}/>
+                return <GitCard key={project.id} data = {project}/>
             })}
         </div>
       </MacWindow>
