@@ -17,6 +17,8 @@ main{
     background-image: url(../public/mac-wallpaper.jpg);
     background-size: cover;
     background-position: bottom;
+    position: relative;
+    overflow: hidden;
 }
 ::-webkit-scrollbar{
     display: none;
