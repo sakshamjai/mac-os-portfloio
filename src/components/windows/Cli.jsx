@@ -63,11 +63,6 @@ experience: {
                 return 'Opening GitHub...'
             }
         },
-        resume: {
-            description: 'Download resume',
-            usage: 'resume',
-            fn: () => 'Resume download started...'
-        },
         social: {
             description: 'View social media links',
             usage: 'social',
